@@ -1,0 +1,208 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(7, 30, 129);
+}
+.box{
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+}
+
+.box1{
+    position: absolute;
+    top: 45%;
+    left: 68%;
+    transform: translate(-50%,-50%);
+}
+
+.notifications{
+    width: 60px;
+    height: 60px;
+    background: red;
+    border-radius: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+
+.rnotifications{
+    width: 60px;
+    height: 60px;
+    background: #f5410a;
+    border-radius: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+
+.notifications:hover {
+    width: 300px;
+    height: 60px;
+    text-align: left;
+    padding: 0 15px;
+    background: rgb(253, 6, 6);
+    transform: translateY(-100%);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.rnotifications:hover {
+    width: 300px;
+    height: 60px;
+    text-align: left;
+    padding: 0 15px;
+    background: red;
+    transform: translateY(-100%);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.notifications .fas {
+    color: #00ffff;
+    line-height: 60px;
+    font-size: 30px;
+}
+
+.rnotifications .fas {
+    color: Turquoise;
+    line-height: 60px;
+    font-size: 30px;
+}
+
+.notifications:hover .fas {
+color: #3be7ee;
+}
+
+.rnotifications:hover .fas {
+    color: #4bfb26;
+    }
+
+.notifications .num {
+    position:absolute;
+    top: 0;
+    right: -5px;
+    width:25px;
+    height: 25px;
+    border-radius: 50%;
+    background:#f0ec1e;
+    color: rgb(85, 14, 5);
+    line-height: 25px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.rnotifications .num1 {
+    position:absolute;
+    top: 0;
+    right: -5px;
+    width:25px;
+    height: 25px;
+    border-radius: 50%;
+    background:#f0ec1e;
+    color: darkblue;
+    line-height: 25px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.notifications:hover .num {
+    position: relative;
+    background: transparent;
+    color: rgb(247, 231, 18);
+    font-size: 24px;
+    top: -4px;
+}
+
+.rnotifications:hover .num1 {
+    position: relative;
+    background: transparent;
+    color: rgb(255, 230, 7);
+    font-size: 24px;
+    top: -4px;
+}
+.notifications:hover .num:after{
+    content: ' Unread Notification'; 
+    font-family: Baskerville;
+}
+
+.rnotifications:hover .num1:after{
+    content: ' Read Notification'; 
+    font-family: Baskerville;
+}
+ul{
+    position: absolute;
+    left: 0; 
+    top: 60px;
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    background:  #ff0080;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    box-sizing: border-box;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: none;
+}
+
+
+.notifications:hover ul {
+    display: block;
+} 
+
+.rnotifications:hover ul {
+    display: block;
+} 
+
+ul li{
+    list-style: none;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    padding: 8px 0;
+    display: flex;
+    
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+ul li .icon {
+    width: 24px;
+    height: 24px;
+    background-color: 	#420ef0;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-right: 15px;
+}
+
+ul li .icon .fas {
+    color: blue;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+ul li .text {
+    position: relative;
+    font-family: sans-serif;
+    top:3px;
+    cursor:pointer;
+}
+
+ul li .text1 {
+    position: relative;
+    font-family: sans-serif;
+    top:3px;
+    cursor:pointer;
+}
+
+ul li:hover .text {
+    font-weight: bold;
+    color: #3be7ee;
+}
+
+ul li:hover .text1 {
+    font-weight: bold;
+    color: rgb(44, 231, 27);
+}
